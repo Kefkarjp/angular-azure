@@ -10,6 +10,9 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './guards/auth.guard';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -26,10 +29,11 @@ import { CounterComponent } from './components/counter/counter.component';
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'fetch-data', component: FetchDataComponent, canActivate:[AuthGuard] },
             { path: '**', redirectTo: 'home' }
         ])
-    ]
+    ],
+    providers: [ AuthService, AuthGuard ]
 })
 export class AppModuleShared {
 }

@@ -22,9 +22,19 @@
                         <span class='glyphicon glyphicon-education'></span> Counter
                     </a>
                 </li>
-                <li [routerLinkActive]="['link-active']">
+                <li *ngIf="authService.isAuthenticated()" [routerLinkActive]="['link-active']">
                     <a [routerLink]="['/fetch-data']">
                         <span class='glyphicon glyphicon-th-list'></span> Fetch data
+                    </a>
+                </li>
+                <li *ngIf="authService.isAuthenticated()" [routerLinkActive]="['link-active']">
+                    <a (click)="authService.logout()">
+                        <span class='glyphicon glyphicon-th-list'></span> Logout
+                    </a>
+                </li>
+                <li *ngIf="!authService.isAuthenticated()" [routerLinkActive]="['link-active']">
+                    <a (click)="authService.login()">
+                        <span class='glyphicon glyphicon-th-list'></span> Login
                     </a>
                 </li>
             </ul>

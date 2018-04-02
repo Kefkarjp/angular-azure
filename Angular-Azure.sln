@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Angular-Azure", "Angular-Azure.csproj", "{793DE22E-FCD3-41B3-9363-BB59E65534DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9696C19-120C-490E-A745-1C464295AA6F}"
+	ProjectSection(SolutionItems) = preProject
+		..\Exercise Files\02_03\Angular-Azure.csproj = ..\Exercise Files\02_03\Angular-Azure.csproj
+		..\Exercise Files\02_03\Angular-Azure.csproj.user = ..\Exercise Files\02_03\Angular-Azure.csproj.user
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{793DE22E-FCD3-41B3-9363-BB59E65534DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793DE22E-FCD3-41B3-9363-BB59E65534DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793DE22E-FCD3-41B3-9363-BB59E65534DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793DE22E-FCD3-41B3-9363-BB59E65534DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE93337B-E2E1-4DF3-A426-D17AF77F4960}
+	EndGlobalSection
+EndGlobal
